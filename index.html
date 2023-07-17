@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Booking Form</title>
+</head>
+<body>
+   
+    
+    <div class="container">
+        
+        <header class="form-header">
+            <h3> <i class="fa-solid fa-plane"></i>Booking Your Journey</h3>
+            <p>Whoever you are, whatever you seek, it all starts from here</p>
+            
+        </header>  
+
+        <div class="form-container">
+            
+            <form action="#" id="form" autocomplete="off">
+               
+                <div class="form-group destination">
+                    <label for="destination" >
+                        Destination
+                    </label>
+                     <input list="browsers" type="text" id="destination"  placeholder="City Or Destination">
+                        <datalist id="browsers"  class="destination-list"  >
+                          
+                        </datalist>
+                    <span class="error-msg">This field cannot be empty</span>
+                </div>
+                
+                <div class="check-in-out">
+                    <div class="form-group">
+                        <label for="check-in"> Check-in date:</label>
+                        <div class="form-group form-group-check-in-out">
+                            <i class="fas fa-calendar-alt"></i>
+                            <input type="text" id="check-in" class="form-control">
+                            <span class="error-msg">This field cannot be empty</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="check-out"> Check-out date:</label>
+                        <div class="form-group form-group-check-out-out">
+                            <i class="fas fa-calendar-alt"></i>
+                            <input type="text" id="check-out" class="form-control">
+                            <span class="error-msg">This field cannot be empty</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rooms-adults-children-nation">
+                    <div class="rooms-adults-children">
+                        <div class="form-group">
+                            <label for="adults"> Nights: </label>
+                            <select name="" class="form-control" id="adults">
+                
+                            </select>
+                        </div>
+                    <div class="form-group">
+                        <label for="rooms"> Rooms: </label>
+                        <select name="" class="form-control" id="rooms">
+                            <option value="1"> 1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="children"> Children: </label>
+                        <select name="" class="form-control" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+
+                    </div>
+                      </div>
+                    <div class="nationn">
+                        <div class="form-group nation">
+                            <label for="nationality">
+                                Nationality
+                            </label>
+                            <input list="nation-list" type="text" id="nationality"  placeholder="Nationality">
+                                <datalist id="nation-list"  class="destination-list"  >
+                                    
+                                </datalist>
+                            <span class="error-msg">This field cannot be empty</span>
+                         </div>
+                     </div>
+                </div>
+                
+
+
+                    <div class="form-group">
+                        <label > Travelling for: </label>
+                        <label for="work" class="radio-label">
+                            <input type="radio" name="travel" id="work">
+                            Work
+                        </label>
+                        <label for="leisure" class="radio-label">
+                            <input type="radio" name="travel" id="leisure">
+                            Leisure
+                        </label>
+                        <span class="error-msg">This field cannot be empty</span>
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label > Search for: </label>
+                        <label for="hotels" class="radio-label">
+                            <input type="radio" name="search-for" id="hotels">
+                            Hotels
+                        </label>
+                        <label for="homes" class="radio-label">
+                            <input type="radio" name="search-for" id="homes">
+                            Homes & Apartments
+                        </label>
+                        <span class="error-msg">This field cannot be empty</span>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <a class="btn search-btn more-option">
+                            More Info
+                        </a>
+                        <button class="btn search-btn">
+                            SEARCH
+                        </button>
+                    </div>
+                        
+
+            </form>
+
+             
+        <div class="modal">
+            <div class="modal-form">
+                <div class="close">X</div>
+                    <h3>Travel</h3>
+                    <p>The most significant benefit for you from traveling is that you are restarting your life for just a 
+                        small period which the traveling period and this will affect your health positively! Surrounded by 
+                        new people, new places, and even new food recipes, all of that and more will help you to feel relaxed and chilled.
+                        The most significant benefit for you from traveling is that you are restarting your life for just a 
+                        small period which the traveling period and this will affect your health positively.</p>
+
+            </div>
+            
+        </div>  
+
+        </div>
+  <footer>
+        <div class="footer-content">
+            <div class="socials">
+                <a href="#"> <i class="icons fa-brands fa-square-facebook"></i> </a>
+                <a href="#"><i class="icons fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="icons fa-brands fa-google"></i></a>
+                <a href="#"><i class="icons fa-brands fa-youtube"></i></a>
+             </div>
+             <h3>Copyright© All Reserved Rights</h3>
+        </div> 
+       
+    </footer>
+ 
+    </div>
+
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
